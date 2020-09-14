@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf16e00a4523b4d73f440dc38f15db1f1889e5a5173596fbd09173a9fc4e5089
+  sha256: afd6f1431f77e7a4a5e4c99cc7c585ae77db18e5ffac33ce868d18e7e940f31c
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -43,8 +43,8 @@ test:
 about:
   home: https://github.com/HTenkanen/pyrosm
   license: MIT
-  license_file: 'LICENSE'
-  summary: 'A Python tool to parse OSM data from Protobuf format into GeoDataFrame.'
+  license_file: LICENSE
+  summary: A Python tool to parse OSM data from Protobuf format into GeoDataFrame.
 
 extra:
   recipe-maintainers:
