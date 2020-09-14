@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD-3-Clause
 
-Summary: A Python tool to parse OSM data from Protobuf format into GeoDataFrame.
+Summary: A Python tool to parse OSM data from Protobuf format into Geopandas GeoDataFrames.
 
 
 
