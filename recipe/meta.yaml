@@ -10,7 +10,7 @@ source:
   sha256: afd6f1431f77e7a4a5e4c99cc7c585ae77db18e5ffac33ce868d18e7e940f31c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -44,7 +44,7 @@ about:
   home: https://github.com/HTenkanen/pyrosm
   license: MIT
   license_file: LICENSE
-  summary: A Python tool to parse OSM data from Protobuf format into GeoDataFrame.
+  summary: A Python tool to parse OSM data from Protobuf format into Geopandas GeoDataFrames.
 
 extra:
   recipe-maintainers:
