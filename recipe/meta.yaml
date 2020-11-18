@@ -24,14 +24,14 @@ requirements:
     - pyrobuf >=0.9.3
     - pygeos
     - shapely
-    - geopandas >= 0.8.0
+    - geopandas >=0.8.0
     - cykhash
     - python-rapidjson
   run:
     - python
     - shapely
     - pyrobuf >=0.9.3
-    - geopandas >= 0.8.0
+    - geopandas >=0.8.0
     - pygeos
     - cykhash
     - python-rapidjson
