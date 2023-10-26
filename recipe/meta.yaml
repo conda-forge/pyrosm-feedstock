@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 {% set name = "pyrosm" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 53072bff13a4e96bb3f384e5a5b22bc63813115d633b8882e596856d8441cd2b
+  sha256: 904e9636e71fd558d127807a0beb9b53e4d2e28a2301d3c46ed8ba2d84d5e1b9
 
 build:
   number: 0
@@ -18,22 +18,20 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - python
+    - python >=3.9
     - pip
     - cython >=0.28
     - pyrobuf >=0.9.3
-    - pygeos
-    - shapely
-    - geopandas >=0.8.0
-    - cykhash
+    - shapely >=2.0
+    - geopandas >=0.12.0
+    - cykhash >=2.0
     - python-rapidjson
   run:
-    - python
-    - shapely
+    - python >=3.9
+    - shapely >=2.0
     - pyrobuf >=0.9.3
-    - geopandas >=0.8.0
-    - pygeos
-    - cykhash
+    - geopandas >=0.12.0
+    - cykhash >=2.0
     - python-rapidjson
 
 test:
