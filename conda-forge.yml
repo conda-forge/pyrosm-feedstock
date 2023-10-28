@@ -1,7 +1,15 @@
+build:
+  matrix:
+  - python: 3.9.*
+  - python: 3.10.*
+  - python: 3.11.*
+  - python: 3.12.*
 build_platform:
   linux_aarch64: linux_64
   linux_ppc64le: linux_64
   osx_arm64: osx_64
+conda_build:
+  pkg_format: '2'
 conda_forge_output_validation: true
 github:
   branch_name: main
@@ -10,11 +18,3 @@ provider:
   linux_aarch64: default
   linux_ppc64le: default
 test_on_native_only: true
-conda_build:
-  pkg_format: '2'
-build:
-  matrix:
-    - python: 3.9.*
-    - python: 3.10.*
-    - python: 3.11.*
-    - python: 3.12.*
