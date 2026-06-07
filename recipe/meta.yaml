@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 {% set name = "pyrosm" %}
 
 package:
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 904e9636e71fd558d127807a0beb9b53e4d2e28a2301d3c46ed8ba2d84d5e1b9
+  sha256: a2dcb46c44b1d1ca9de8e62bd8a5159f42d80f63ccf4a7ee67ae9c16a2c59b52
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [py<39]
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
+  skip: True  # [py<310]
 
 requirements:
   build:
@@ -24,13 +24,14 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
     - cykhash >=2.0
     - cython >=0.28
     - geopandas >=0.12.0
     - pyrobuf >=0.9.3
     - python-rapidjson
     - shapely >=2.0
-
   run:
     - python
     - cykhash >=2.0
@@ -45,7 +46,7 @@ test:
     - pyrosm
 
 about:
-  home: https://github.com/HTenkanen/pyrosm
+  home: https://github.com/pyrosm/pyrosm
   license: MIT
   license_file: LICENSE
   summary: A Python tool to parse OSM data from Protobuf format into Geopandas GeoDataFrames.
