@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 {% set name = "pyrosm" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a2dcb46c44b1d1ca9de8e62bd8a5159f42d80f63ccf4a7ee67ae9c16a2c59b52
+  sha256: 0774b5e853be74e4e292eb0073f321ccd42658e622c317af2f31e164e4969fb7
 
 build:
   number: 1
@@ -25,22 +25,24 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
+    - setuptools >=18.0
     - wheel
-    - cykhash >=2.0
-    - cython >=0.28
+    - cython
+    - cykhash >=2
+    - certifi
     - geopandas >=0.12.0
-    - pyrobuf >=0.9.3
+    - protobuf >=6.33.5
     - python-rapidjson
-    - shapely >=2.0
+    - shapely >=2.1
   run:
     - python
-    - cykhash >=2.0
-    - cython >=0.28
+    - setuptools >=18.0
+    - cykhash >=2
+    - certifi
     - geopandas >=0.12.0
-    - pyrobuf >=0.9.3
+    - protobuf >=6.33.5
     - python-rapidjson
-    - shapely >=2.0
+    - shapely >=2.1
 
 test:
   imports:
