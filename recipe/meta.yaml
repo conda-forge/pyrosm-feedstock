@@ -1,4 +1,4 @@
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 {% set name = "pyrosm" %}
 
 package:
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 20b16f98bbbbea4427ce4587fdaaa8d179c10094bbfa3a62b0a58e28d5345d11
+  sha256: 7ce4e8673bc72c51c4b99d74c0609215a81e5c9e4a09dcbd2ee35e94fe7e2633
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
-  skip: True  # [py<310]
+  skip: true  # [py<310]
 
 requirements:
   build:
