@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 {% set name = "pyrosm" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3c2fb5d8e1b85eb76a6ff7132f1638da26591ac95efd9f784139233b137cf578
+  sha256: 984692c106153adbb6eacf5f698849ee6bbc8eeff6c74a3c76f2204be8a881ef
 
 build:
   number: 0
