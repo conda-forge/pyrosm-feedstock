@@ -43,10 +43,15 @@ requirements:
     - protobuf >=6.33.5
     - python-rapidjson
     - shapely >=2.1
+    - tqdm >=4.66
 
 test:
   imports:
     - pyrosm
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/pyrosm/pyrosm
