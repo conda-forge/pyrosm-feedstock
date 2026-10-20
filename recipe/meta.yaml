@@ -1,4 +1,4 @@
-{% set version = "0.19.1" %}
+{% set version = "0.20.0" %}
 {% set name = "pyrosm" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c42195c9601cea6e1c3d4b3303486843f4a032a84f5e00292a7cadd62f0fb0a9
+  sha256: 32ed159e1e9a6dc4f4601db5d2314fe5a99079e9dc0abb0c629aa485058d79cd
 
 build:
   number: 0
@@ -28,7 +28,6 @@ requirements:
     - setuptools >=18.0
     - wheel
     - cython
-    - cykhash >=2
     - certifi
     - geopandas >=0.12.0
     - protobuf >=6.33.5
@@ -37,7 +36,6 @@ requirements:
   run:
     - python
     - setuptools >=18.0
-    - cykhash >=2
     - certifi
     - geopandas >=0.12.0
     - protobuf >=6.33.5
