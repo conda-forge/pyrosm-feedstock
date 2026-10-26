@@ -25,7 +25,7 @@ requirements:
   host:
     - python
     - pip
-    - setuptools >=18.0
+    - setuptools >=77
     - wheel
     - cython
     - certifi
@@ -53,8 +53,11 @@ test:
 
 about:
   home: https://github.com/pyrosm/pyrosm
-  license: MIT
-  license_file: LICENSE
+  license: BSD-3-Clause AND MIT
+  license_file:
+    - LICENSE
+    - vendor/khash/LICENSE
+    - vendor/libdeflate/COPYING
   summary: A Python tool to parse OSM data from Protobuf format into Geopandas GeoDataFrames.
 
 extra:
