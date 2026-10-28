@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyrosm-feedstoc
 
 Home: https://github.com/pyrosm/pyrosm
 
-Package license: MIT
+Package license: BSD-3-Clause AND MIT
 
 Summary: A Python tool to parse OSM data from Protobuf format into Geopandas GeoDataFrames.
 
