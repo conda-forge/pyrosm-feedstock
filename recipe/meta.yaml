@@ -39,6 +39,7 @@ requirements:
     - certifi
     - geopandas >=0.12.0
     - protobuf >=6.33.5
+    - pyarrow >=19.0.1
     - python-rapidjson
     - shapely >=2.1
     - tqdm >=4.66
